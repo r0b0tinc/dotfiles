@@ -1,7 +1,7 @@
 ####################
 #####           Unix
 set autolist = ambiguous
-set complete=igncase
+set complete = igncase
 
 # editors
 setenv EDITOR vim
@@ -10,7 +10,7 @@ setenv CLICOLOR 1
 setenv LSCOLORS Cxfxgxdxbxegedabagacad
 
 # Set architecture flags
-setenv ARCHFLAGS "-arch x86_64"
+# setenv ARCHFLAGS "-arch x86_64"
 
 # pip should only run if there is a virtualenv currently activated
 # setenv PIP_REQUIRE_VIRTUALENV 1
@@ -33,8 +33,10 @@ set prompt = "[%h] %C3 %# "
 setenv PYTHONDONTWRITEBYTECODE 1
 
 # setup path
+# setenv PATH /some/dir:${PATH}
 
 # setup python path
+# setenv PYTHONPATH /some/dir:${PYTHONPATH}
 
 # add aliases
 source ~/.aliases
