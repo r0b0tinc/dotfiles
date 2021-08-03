@@ -1,0 +1,19 @@
+####################################
+#####                           Unix
+alias ll 'ls -lah'
+alias la 'ls -ltrha'
+alias untar 'tar xvzf \!:*'
+alias grp 'grep -ril \!*'
+alias fnd 'find . -name "*\!**"'
+
+
+####################################
+#####                            git
+alias gs "git status -sb"
+alias gl "git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative \!:*"
+alias gll "git log --pretty=format:'%Cred%h%Creset <%an>%Creset%Cblue%d%Creset %Cgreen(%cr)%Creset%n%C(yellow)%s%Creset%n%b' --stat --date=relative \!:*"
+alias gd "git ls-files -m | git difftool"
+
+####################################
+#####  							Done
+echo 'loaded .aliases'
